@@ -67,8 +67,3 @@
     display: none;
   }
 }
-@media only screen and (max-width: 520px) {
-  .wrapper {
-    padding-top: 125px;
-  }
-}
