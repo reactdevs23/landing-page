@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo {
+  max-width: 28px;
+  width: 100%;
+}

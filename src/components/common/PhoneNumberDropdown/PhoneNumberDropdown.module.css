@@ -1,0 +1,109 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdownMain {
+  max-width: 366px;
+  width: max-content;
+  height: 0;
+  overflow: hidden;
+  background-color: var(--Bg-Default);
+  border: 1px solid var(--Br-Dark);
+
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.4s ease;
+  color: var(--Text-Primary);
+}
+
+@media screen and (max-width: 446px) {
+  .dropdownMain {
+    width: calc(100vw - 40px);
+  }
+}
+
+.dropdownMain.active {
+  /* overflow: auto; */
+  max-height: 352px;
+  height: max-content;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.searchContainer {
+  position: relative;
+  padding: 4px 12px;
+  border-bottom: 1px solid var(--Br-Dark);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchContainer .searchIcon {
+  font-size: 20px;
+  color: var(--Text-Placeholder);
+  margin-top: 2px;
+}
+
+.searchContainer input {
+  height: 40px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  width: 100%;
+  font-weight: 500;
+  background-color: transparent;
+
+  color: var(--Text-Primary);
+  outline: none;
+}
+
+.searchContainer input::placeholder {
+  color: var(--Text-Placeholder);
+}
+
+.list {
+  overflow: auto;
+}
+
+.listItem {
+  height: 40px;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s ease;
+  color: var(--Text-Secondary);
+  border-radius: 8px;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+}
+
+.listItem .left {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.listItem .right {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.listItem.active,
+.listItem:hover {
+  background-color: var(--Bg-Light);
+  color: var(--Heading-Primary);
+}
+.checkmark {
+  color: var(--Heading-Primary);
+  font-size: 16px;
+}

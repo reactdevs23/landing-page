@@ -1,0 +1,69 @@
+.button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+  letter-spacing: -0.2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  padding: 14px 20px;
+
+  background: var(--Primary-Default);
+  color: var(--Base-White);
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: var(--radius);
+}
+
+.btnPrimary {
+  background: var(--Primary-Default);
+  color: var(--Base-White);
+  border: 1px solid var(--Primary-Default);
+}
+.btnSuccess {
+  background: var(--Success-Default);
+  color: var(--Base-White);
+}
+.transparent {
+  background: transparent;
+  color: var(--Text-Secondary);
+}
+.primitive900 {
+  background: var(--Primitive-900);
+  color: var(--Heading-Primary);
+}
+.primitive950 {
+  background: var(--Primitive-950);
+  color: var(--Heading-Primary);
+}
+.primitive800 {
+  background: var(--Primitive-800);
+  color: var(--Heading-Primary);
+}
+.primitive100 {
+  background: var(--Primitive-100);
+  color: var(--Primitive-800);
+}
+.wFull {
+  width: 100%;
+}
+.spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  margin-right: 5px; /* Add some space between the spinner and the text */
+}
+.loading {
+  gap: 0px;
+  opacity: 0.8;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

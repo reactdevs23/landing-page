@@ -1,0 +1,89 @@
+.auth {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.phoneNumber {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.code {
+  color: var(--Text-Primary);
+}
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: var(--Text-Primary);
+  border: 1px solid var(--Br-Dark);
+  height: 100%;
+  border-radius: var(--radius);
+  padding: 12px 20px;
+}
+.arrow {
+  color: var(--Text-Primary);
+  font-size: 16px;
+}
+.info {
+  line-height: 150%;
+}
+.or {
+  position: relative;
+
+  padding: 12px;
+  background: var(--Bg-White);
+  width: 100%;
+}
+.or::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 43%;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: var(--Br-Dark);
+}
+.or::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 43%;
+  height: 1px;
+  transform: translateY(-50%);
+  background-color: var(--Br-Dark);
+}
+.socialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.social {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius);
+  background: var(--Bg-Light);
+  cursor: pointer;
+}
+.logo {
+  max-width: 24px;
+  width: 100%;
+}
+.buttonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}

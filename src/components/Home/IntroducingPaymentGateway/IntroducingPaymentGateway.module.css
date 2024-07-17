@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding: 100px 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 90%;
+  margin: 0 auto;
+}
+.heading {
+  max-width: 594px;
+  width: 100%;
+  line-height: 100%;
+}
+.img {
+  width: 100%;
+  display: block;
+
+  margin: 0 auto;
+}
+.wellComeContainer {
+  max-width: 792px;
+  margin: 0 auto;
+  width: 90%;
+}
+.info {
+  color: var(--Text-Placeholder);
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    gap: 60px;
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+  }
+}

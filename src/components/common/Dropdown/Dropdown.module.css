@@ -1,0 +1,78 @@
+.dropdown {
+  position: relative;
+  width: 100%;
+  background: var(--Bg-Light);
+  border-radius: 8px;
+}
+.labelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px 16px;
+}
+
+.arrow {
+  font-size: 14px;
+  color: var(--Text-Placeholder);
+  cursor: pointer;
+  margin-left: auto;
+}
+.dropdownMain {
+  min-width: calc(100% + 5px);
+  width: max-content;
+  position: absolute;
+  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% + 8px);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s ease;
+  border: 1px solid var(--Br-Dark);
+  border-radius: var(--radius);
+  background: var(--Bg-Light);
+}
+
+.list {
+  height: 0;
+  overflow: hidden;
+}
+
+.dropdownMain.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.active .list {
+  overflow: auto;
+  max-height: 250px;
+  height: 100%;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  color: var(--Text-Primary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.listItem.active {
+  background: var(--Primary-Default);
+}
+.listItem.active {
+  color: var(--Heading-Primary);
+}
+.listItem:hover {
+  background: var(--Primary-Default);
+  color: var(--Heading-Primary);
+}

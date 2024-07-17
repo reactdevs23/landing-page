@@ -1,0 +1,30 @@
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  background: var(--Bg-Light);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.tabs .tab {
+  padding: 10px 16px;
+
+  cursor: pointer;
+  color: var(--Heading-Primary);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.tabs .tab.active {
+  background: var(--Primitive-800);
+}
+@media only screen and (max-width: 520px) {
+  .tabs .tab {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
